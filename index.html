@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, My Everything</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- LAYAR UTAMA KADO -->
+    <div id="gift-overlay" onclick="bukaKado()">
+        <div class="gift-box">🎁</div>
+        <p style="color: #ffb7d2; margin-top: 20px; font-family: sans-serif; letter-spacing: 1px;">buka ini yang😉...</p>
+    </div>
+
+    <!-- GERBANG CONTAINER UTAMA -->
+    <div class="container">
+        <p class="sub-title">a love letter in bloom</p>
+        <h1 class="main-title">For You, My Everything</h1>
+        <p class="tagline">Every petal holds a whisper of how much you mean to me.</p>
+        
+        <div class="divider">🌸 🌸 🌸</div>
+
+        <!-- Kartu Pesan Surat -->
+        <div class="card">
+            <p class="card-caption">from my heart</p>
+            <h2>You are my wildest dream come true.</h2>
+            <p class="letter-text">
+                Dalam dunia yang penuh dengan hal-hal biasa, kamu adalah keajaiban yang luar biasa. 
+                Cara kamu tertawa, caramu peduli, dan caramu menyikapi segala hal... 
+                Itu mengisi setiap sudut duniaku dengan warna yang tidak pernah tahu aku butuhkan.
+            </p>
+            <p class="signature">— Always yours</p>
+            
+            <!-- PEMUTAR MUSIK MINI (DUDUK MANIS DI DALAM CARD) -->
+            <div class="music-player">
+                <button id="music-btn" onclick="toggleMusik()">🎵</button>
+                <div class="music-info">
+                    <span class="song-title">Langit Favoritku</span>
+                    <span class="artist-name">Luthfi Aulia</span>
+                </div>
+                <audio id="bg-music" src="music/langit.mp3" loop></audio>
+            </div> <!-- (PENTING!) Sekarang tag music-player sudah ditutup dengan aman -->
+        </div>
+
+        <div class="divider">🌸 🌸 🌸</div>
+
+        <!-- SECTION 2: WHY I LOVE YOU -->
+        <div class="section-reasons">
+            <p class="sub-title">a thousand reasons why</p>
+            <h2 class="section-title">Why I Love You</h2>
+            
+            <div class="grid-reasons">
+                <div class="reason-card">
+                    <span class="reason-icon">✨</span>
+                    <h3>Your Smile</h3>
+                    <p>It lights up every room and instantly wipes away all my bad days.</p>
+                </div>
+                <div class="reason-card">
+                    <span class="reason-icon">💫</span>
+                    <h3>Your Soul</h3>
+                    <p>Rare, genuine, and more beautiful than any flower ever grown.</p>
+                </div>
+                <div class="reason-card">
+                    <span class="reason-icon">🤍</span>
+                    <h3>Your Kindness</h3>
+                    <p>The way you care for the world makes me want to be a better person.</p>
+                </div>
+                <div class="reason-card">
+                    <span class="reason-icon">🎵</span>
+                    <h3>Your Laughter</h3>
+                    <p>The best sound in the universe. My favorite melody, always.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">🌸 🌸 🌸</div>
+
+        <!-- SECTION 3: A GARDEN GROWN -->
+        <div class="section-garden">
+            <p class="sub-title">our secret garden</p>
+            <h2 class="section-title">A Garden Grown Just For You</h2>
+            <p class="tagline">Hover or tap each flower to discover its hidden meaning 🌸</p>
+            
+            <div class="garden-buttons">
+                <button class="btn-flower" onclick="cekArtiBunga('🌹', 'Mawar Merah: Lambang cintaku yang tulus dan gak akan pernah pudar buat kamu.')">🌹</button>
+                <button class="btn-flower" onclick="cekArtiBunga('🌸', 'Cherry Blossom: Setiap momen bersamamu itu indah dan sangat berharga.')">🌸</button>
+                <button class="btn-flower" onclick="cekArtiBunga('🌻', 'Sunflower: Kamu adalah matahari yang selalu menghangatkan hariku.')">🌻</button>
+                <button class="btn-flower" onclick="cekArtiBunga('🌷', 'Tulip: Rasa nyaman yang luar biasa setiap kali aku ada di dekatmu.')">🌷</button>
+            </div>
+            
+            <div id="flower-meaning" class="meaning-box">Klik salah satu bunga di atas...</div>
+        </div>
+
+        <div class="divider">🌸 🌸 🌸</div>
+
+        <!-- SECTION 4: GALERI FOTO MELEBAR MEGAH -->
+        <div class="section-gallery">
+            <p class="sub-title">captured moments</p>
+            <h2 class="section-title">Your Beautiful Pictures</h2>
+            <p class="tagline">Every frame tells a story of how lucky I am to have you.</p>
+
+            <div class="grid-gallery">
+                <div class="gallery-item">
+                    <img src="images/foto1.jpeg" alt="Memory 1">
+                    <div class="photo-caption">Your prettiest smile ✨</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto2.jpeg" alt="Memory 2">
+                    <div class="photo-caption">Favorite date in nature 🤍</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto3.jpeg" alt="Memory 3">
+                    <div class="photo-caption">deep talk moment while eating 😆</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/foto4.jpeg" alt="Memory 4">
+                    <div class="photo-caption">My favorite view adn person, always 💫</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER DI TENGAH -->
+        <footer class="love-footer">
+            <p>Made with 💗 for Sayang</p>
+            <p class="copyright">© 2026 — Countless memories to come</p>
+        </footer>
+
+    </div> <!-- PENUTUP UTAMA CONTAINER -->
+
+    <!-- Script ditaruh di luar container agar aman saat efek fade-in berjalan -->
+    <script src="js/script.js"></script>
+</body>
+</html>
