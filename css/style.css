@@ -443,3 +443,25 @@ body {
         height: 250px; /* Agak ditinggikan sedikit kalau di layar HP biar puas lihatnya */
     }
 }
+
+/* Menghias Tombol Buka Surat Terakhir agar Estetik */
+.envelope-btn {
+    background: linear-gradient(135deg, #ff6b8b, #ff4757); /* Warna gradasi pink-merah romantis */
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px; /* Membuat tombolnya berbentuk kapsul bulat mulus */
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Efek pas tombolnya ditunjuk/disentuh */
+.envelope-btn:hover {
+    transform: translateY(-3px); /* Tombol sedikit mengangkat naik */
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.6);
+}
