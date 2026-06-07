@@ -113,14 +113,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // Ketika tombol Buka Surat diklik
     if (tombolBuka) {
         tombolBuka.addEventListener('click', function() {
-            if (modalSurat) modalSurat.classList.remove('hidden'); // Memunculkan surat
+            if (modalSurat) {
+                modalSurat.classList.remove('hidden'); 
+                modalSurat.style.display = 'flex'; // ✨ Tambahkan baris ini agar modalnya muncul di tengah layar dengan anggun
+            }
         });
     }
 
     // Ketika tombol Kembali diklik
     if (tombolTutup) {
         tombolTutup.addEventListener('click', function() {
-            if (modalSurat) modalSurat.classList.add('hidden'); // Menyembunyikan surat kembali
+            if (modalSurat) {
+                modalSurat.classList.add('hidden'); 
+                modalSurat.style.display = 'none'; // ✨ Tambahkan baris ini agar modalnya sembunyi kembali seutuhnya
+            }
         });
     }
 });
