@@ -437,8 +437,22 @@ body {
         font-size: 1.8rem;
     }
     
+    /* 🛠️ SAKTI 1: MENGECILKAN KARTU PESAN UTAMA (DI LAYAR DEPAN) */
+    .card {
+        max-width: 90% !important; /* Biar kartunya punya jarak manis dari pinggir HP, gak mentok */
+        padding: 25px 20px !important; /* Mengurangi busa di dalam kotak agar lebih imut */
+        margin: 25px auto !important; /* Menjaga posisinya tetap presisi di tengah layar */
+    }
+    
     .card h2 {
-        font-size: 1.3rem;
+        font-size: 1.25rem !important; /* Mengecilkan sedikit judul "You are my wildest..." */
+        margin-bottom: 15px !important;
+    }
+
+    .letter-text {
+        font-size: 13.5px !important; /* Mengecilkan ukuran teks surat biar pas dibaca di HP */
+        line-height: 1.6 !important; /* Memberi rongga antar baris biar mata Nevlin gak pusing baca teks padat */
+        text-align: center !important; /* Mengubah dari rata kanan-kiri (justify) jadi rata tengah biar romantis di HP */
     }
 
     /* Memaksa grid alasan tetap rapi berjejer 2 kolom kanan-kiri di HP */
