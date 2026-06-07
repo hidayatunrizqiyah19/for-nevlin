@@ -475,9 +475,20 @@ body {
         padding: 8px;
     }
     
-    .surat-box-final p {
-        font-size: 15px;
+    .surat-box-final {
+        max-width: 90% !important; /* Mengunci lebar kotak surat agar tidak mentok kanan-kiri HP */
+        padding: 25px 20px !important; /* Mengecilkan ruang busa di dalam kotak biar imut */
     }
+
+    .surat-box-final h3 {
+        font-size: 22px !important; /* Mengecilkan sedikit tulisan Dear Nevlin */
+    }
+
+    .surat-box-final p {
+        font-size: 14px !important; /* Mengecilkan teks isi surat agar proporsional */
+        line-height: 1.5 !important;
+    }
+
 }
 
 /* ==================== DEKORASI MODAL SURAT RAHASIA SPA ==================== */
