@@ -107,11 +107,13 @@ body {
 }
 
 .sub-title {
-    font-style: italic;
-    color: #cca4b5;
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive; /* Mengubah font menjadi tulisan latin bersambung */
+    color: #ffb7d2; /* Mengubah warnanya jadi pink lembut agar lebih menyala manis */
+    font-size: 20px; /* Diperbesar sedikit karena font latin cenderung lebih tipis */
+    font-weight: 600;
+    letter-spacing: 1px; /* Renggang huruf dirapatkan sedikit agar gandengannya tidak putus */
     margin-bottom: 5px;
+    text-transform: none;
 }
 
 .main-title {
@@ -234,6 +236,15 @@ body {
 .artist-name { font-size: 11px; color: #cca4b5; }
 
 /* --- SECTION 2: GRID ALASAN --- */
+
+/* --- FORMAT KHUSUS GEDEIN JUDUL WHY I LOVE YOU DI LAPTOP --- */
+.section-reasons .section-title {
+    font-size: 2.5rem !important; /* Kita naikin jadi 3rem biar gede, tegas, dan menonjol! */
+    color: #f3d0dd; /* Warna pink romantis */
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
 .section-reasons, .section-garden {
    text-align: center;
     width: 100%;
@@ -429,6 +440,12 @@ body {
 
 /* ==================== MODIFIKASI TOTAL: RESPONSIVE LAYAR HP (ANTI LAYOUT JEBOL) ==================== */
 @media (max-width: 480px) {
+
+    /* Menyesuaikan judul Why I Love You khusus pas dibuka di HP */
+    .section-reasons .section-title {
+        font-size: 2rem !important; 
+    }
+    
     .container {
         padding: 30px 12px;
     }
